@@ -1,0 +1,450 @@
+a:hover {
+  color: #660a19;
+}
+html {
+  font-size: 10px;
+}
+button :focus {
+  outline: 0px;
+}
+/*      SCREEN 1 AND ITS MEDIA      */
+.screen-1 {
+  height: 790px;
+  color: #fff;
+  background: #666 url('../img/bg1.jpg') center -600px no-repeat;
+}
+.screen-1 header {
+  height: 90px;
+  background: linear-gradient(0deg, transparent, #1e1e1e);
+}
+.screen-1 header .logo {
+  font-size: 3rem;
+  color: #5a5a5a;
+  text-transform: uppercase;
+}
+.screen-1 header .phone {
+  text-align: right;
+}
+.screen-1 header .phone-number {
+  font-size: 2.8rem;
+}
+.screen-1 header .phone .callback a {
+  font-size: 1.6rem;
+  color: #d91233;
+  text-decoration: underline;
+}
+.screen-1-title {
+  margin-top: 4vw;
+  font-size: 3rem;
+  text-align: center;
+}
+.screen-1-title strong {
+  font-weight: bold;
+  font-size: 4.8rem;
+}
+.screen-1 .features {
+  margin-top: 100px;
+}
+.screen-1 .features .feature {
+  text-align: center;
+}
+.screen-1 .features .feature-img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.2vw;
+  display: inline-block;
+}
+.screen-1 .features .feature-text {
+  font-size: 1.5rem;
+}
+.applications {
+  margin-top: 100px;
+}
+.applications .application button {
+  font-size: 1.8rem;
+  border-radius: 50px;
+  width: 240px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  background-color: #d91233;
+  transition: 1s;
+}
+.applications .application .quick-application-btn:hover,
+.applications .application .quick-application-btn button :hover {
+  border: 2px solid #d91233;
+  background-color: transparent;
+}
+.applications .application .detailed-application-btn {
+  border: 2px solid #d91233;
+  background-color: transparent;
+}
+.applications .application .detailed-application-btn:hover,
+.applications .application .detailed-application-btn button:hover {
+  border: none;
+  background-color: #d91233;
+}
+.applications .application-text {
+  margin-top: 20px;
+  width: 240px;
+  display: inline-block;
+  font-size: 1.4rem;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .screen-1-title {
+    font-size: 2rem;
+  }
+  .screen-1 strong {
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .screen-1 .screen-1-title {
+    margin-top: 50px;
+  }
+  .screen-1 .screen-1 strong {
+    font-weight: bold;
+  }
+  .screen-1 .features {
+    margin-top: 50px;
+  }
+  .screen-1 .applications {
+    margin-top: 50px;
+  }
+  .screen-1 .applications button {
+    margin-top: 20px;
+  }
+}
+/*      SCREEN 2 AND ITS MEDIA      */
+.screen-2 {
+  padding-bottom: 100px;
+}
+.screen-2 .features {
+  margin-top: 100px;
+}
+.screen-2 .features .feature {
+  text-align: center;
+}
+.screen-2 .features .feature-img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.2vw;
+  display: inline-block;
+}
+.screen-2 .features .feature-text {
+  font-size: 1.5rem;
+}
+.screen-2 .features-line-2 {
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .screen-2 .features {
+    margin-top: 50px;
+  }
+  .screen-2 .center-sm-feature {
+    margin-top: 50px;
+  }
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  padding: 30px 50px 30px 50px;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 320px;
+  height: 330px;
+  background-color: #fff;
+}
+.popup-content form .name::placeholder {
+  background: transparent url('../img/user.png') right center no-repeat;
+}
+.popup-content form .phone::placeholder {
+  background: transparent url('../img/phone.png') right center no-repeat;
+}
+.popup-content form .email::placeholder {
+  background: transparent url('../img/email.png') right center no-repeat;
+}
+.popup-close {
+  position: absolute;
+  font-size: 40px;
+  top: -8%;
+  right: -12%;
+  border: none;
+  background-color: transparent;
+  color: #f00;
+  font-weight: bold;
+}
+.popup-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.popup-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.popup .text-input {
+  display: inline-block;
+  margin-top: 10px;
+  width: 220px;
+  height: 40px;
+  font-size: 1.2rem;
+  padding-left: 14px;
+  padding-right: 14px;
+  border: 1px solid #d0d0d0;
+}
+.popup .submit {
+  font-size: 1.5rem;
+  border-radius: 50px;
+  width: 220px;
+  height: 45px;
+  margin-top: 15px;
+  color: #fff;
+  border: none;
+  background-color: #d91233;
+}
+#quick-application-popup .popup-content {
+  height: 280px;
+}
+.screen-3 {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  background-color: #ebebeb;
+}
+.screen-3-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.screen-3-subtitle {
+  font-size: 1.6rem;
+}
+.screen-3 .form-container {
+  margin-top: 60px;
+  padding: 55px;
+  border: 5px solid #fff;
+}
+.screen-3 .form-container .vertical-line {
+  width: 240px;
+  margin: 0 auto;
+}
+.screen-3 .form-container .input-container {
+  margin-top: 20px;
+}
+.screen-3 .form-container label {
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+.screen-3 .form-container input,
+.screen-3 .form-container select,
+.screen-3 .form-container textarea {
+  border: none;
+  width: 240px;
+  height: 40px;
+  font-size: 1.3rem;
+  padding: 14px;
+}
+.screen-3 .form-container select {
+  padding: 5px;
+}
+.screen-3 .form-container textarea {
+  height: 128px;
+  resize: none;
+}
+.screen-3 .form-container .submit {
+  margin-top: 30px;
+  border-radius: 50px;
+  background-color: #d91233;
+  color: #fff;
+  padding: 0;
+}
+.screen-3 .form-container input ::placeholder,
+.screen-3 .form-container select ::placeholder,
+.screen-3 .form-container textarea ::placeholder {
+  color: #b8b8b8;
+}
+@media (max-width: 992px) {
+  .screen-3 .form-container {
+    text-align: center;
+  }
+  .screen-3 .form-container .vertical-line {
+    margin: 0 auto;
+  }
+  .screen-3 .form-container .input-container {
+    margin-top: 20px;
+  }
+  .screen-3 .form-container label {
+    margin-bottom: 8px;
+  }
+}
+.screen-4-row {
+  margin-top: 20px;
+}
+.screen-4-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.screen-4 .logo :hover {
+  opacity: 100;
+}
+.screen-4 .logo-color {
+  position: absolute;
+  opacity: 0%;
+  transition: 1s;
+}
+.screen-4 .logo-color :hover {
+  opacity: 100;
+}
+.screen-5-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 65px;
+  margin-top: 80px;
+}
+.screen-5 .video {
+  height: 430px;
+  width: 100%;
+  padding: 15px;
+  border: 5px solid #f2f2f2;
+  margin-bottom: 80px;
+}
+.screen-5 .vid {
+  height: 100%;
+  background-color: #3b3b3b;
+}
+.screen-6 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #ebebeb;
+}
+.screen-6-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.screen-6 .comment {
+  margin-top: 55px;
+  display: flex;
+}
+.screen-6 .comment .avatar {
+  margin-right: 22px;
+}
+.screen-6 .comment-text-block .name {
+  font-size: 12px;
+  color: #757575;
+}
+.screen-6 .comment-text-block .comment-title {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d91233;
+}
+.screen-6 .comment-text-block .comment-text {
+  margin-top: 14px;
+  font-size: 13px;
+}
+.screen-7 {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  background-color: #dbdbdb;
+}
+.screen-7-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.screen-7-subtitle {
+  font-size: 1.6rem;
+}
+.screen-7 .form-container {
+  margin-top: 60px;
+  padding: 55px;
+  border: 5px solid #fff;
+}
+.screen-7 .form-container label {
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+.screen-7 .form-container input {
+  border: none;
+  width: 240px;
+  height: 40px;
+  font-size: 1.3rem;
+  padding: 14px;
+}
+.screen-7 .form-container .submit {
+  margin-top: 40px;
+  border-radius: 50px;
+  background-color: #d91233;
+  color: #fff;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .form-container .n {
+    margin-right: 180px;
+  }
+}
+.screen-8 {
+  height: 550px;
+  background: #fff url("../img/bg2.jpg") -250px 0px no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen-8 .block {
+  display: inline-block;
+  background-color: #d91233;
+  width: 480px;
+  height: 320px;
+  font-size: 20px;
+  color: #fff;
+  padding-top: 1px;
+}
+.screen-8 .block a,
+.screen-8 .block a:visited {
+  color: #fff;
+}
+.screen-8 .block div {
+  margin-top: 40px;
+}
+.screen-8 .block-title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+footer {
+  margin-top: 10px;
+  margin: 10px;
+}
+footer .logo {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: #5a5a5a;
+  text-transform: uppercase;
+}
+footer .phone {
+  text-align: right;
+}
+footer .phone-number {
+  font-size: 2.8rem;
+}
+footer .phone .callback a {
+  font-size: 1.6rem;
+  color: #d91233;
+  text-decoration: underline;
+}
